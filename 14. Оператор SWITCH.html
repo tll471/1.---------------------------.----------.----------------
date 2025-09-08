@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Оператор SWITCH</h1>
+    <script>
+    //     let number1, number2;
+    //     number1 = parseInt(prompt("Введите 1 число"));
+    //     number2 = parseInt(prompt("Введите 2 число"));
+    //     let function1 = prompt("Выберите действие: 1) + 2) - 3) * 4) /");
+        
+    // if(number2 != 0)
+    // {
+    // let answer;
+    // switch (function1) {
+    //         case "1":
+    //             answer = parseInt(number1 + number2);
+    //             alert("Your answer is: " + answer);
+    //             break;
+    //         case "2":
+    //             answer = number1 - number2;
+    //             alert("Your answer is: " + answer);
+    //             break;
+    //         case "3":
+    //             answer = number1 * number2;
+    //             alert("Your answer is: " + answer);
+    //             break;
+    //         case "4":
+    //             answer = number1 / number2;
+    //             alert("Your answer is: " + answer);
+    //             break;
+    //         default:
+    //             alert("Error!");
+    //             break;
+    //     }
+    // }
+    // else{
+    //     alert("Error! Number2 = 0");
+    // }
+
+
+//1. Запросить у пользователя число и определить, оно положительное, отрицательное или ноль.
+
+// let number = parseFloat(prompt("Введите число"));
+// if(number > 0)
+// {
+//     alert("number > 0")
+// } 
+// else if(number < 0)
+// {
+//     alert("number > 0")
+// }
+// else if(number == 0)
+// {
+//     alert("number = 0")
+// }
+
+//2. Запросить у пользователя его возраст и проверить корректность введенных данных (0–120 лет).
+// let age = parseFloat(prompt("Введите сколько вам лет"));
+// if(age >= 0 && age <= 120)
+// {
+//     alert("Fine");
+// }
+// else
+// {
+//     alert("Try again!");
+// }
+
+// 3. Запросить у пользователя число и вывести его модуль
+// (|7| = 7, |-7| = 7).
+
+// let number = parseFloat(prompt("Введите число"));
+
+// if(number >= 0)
+// {
+//     alert("Your answer is: " + number);
+// }
+// else if(number <= -1)
+// {
+//     let number2 = -(number);
+//     alert("Your answer is: " + number2);
+// }
+
+//4. Запросить у пользователя время (часы, минуты, секунды)
+// и проверить корректность введенных данных.
+
+// let seconds = parseInt(prompt("Введите секунды: "));
+// let minutes = parseInt(prompt("Введите минуты: "));
+// let hours = parseInt(prompt("Введите часы: "));
+
+// if(seconds >= 0 && seconds < 61 && minutes >= 0 && minutes < 61 && hours >= 0)
+// {
+//     alert("Everything is fine! Your answer is: seconds: " + seconds + " minutes: " + minutes + " hours: " + hours);
+// }
+// else
+// {
+//     alert("Try again!");
+// }
+
+// 5. Запросить координаты точки (x, y) и определить номер
+// четверти, в которую попала эта точка. Необходимо учесть
+// случаи попадания точки на оси X или Y или в начало
+// координат
+
+// let x = parseInt(prompt("Enter x: "));
+// let y = parseInt(prompt("Enter y: "));
+
+// if(x > 0 && y > 0)
+// {
+//     alert("Первая четверть");
+// }
+// else if(x < 0 && y > 0)
+// {
+//     alert("Вторая четверть");
+// }
+// else if(x < 0 && y < 0)
+// {
+//     alert("Третья четверть");
+// }
+// else if(x > 0 && y < 0)
+// {
+//     alert("Четвертая четверть");
+// }
+// else
+// {
+//     alert("Dont write 0!");
+// }
+
+// Задания, в которых необходимо использовать SWITCH.
+// 1. Запросить у пользователя номер месяца и вывести на экран
+// его название.
+
+// let number = prompt("Введите месяц, число");
+
+// switch (number) {
+//     case "1":
+//         alert("Январь")
+//         break;
+//     case "2":
+//         alert("Февраль")
+//         break;
+//     case "3":
+//         alert("Март")
+//         break;
+//     case "4":
+//         alert("Апрель")
+//         break;
+//     case "5":
+//         alert("Май")
+//         break;
+//     case "6":
+//         alert("Июнь")
+//         break;
+//     case "7":
+//         alert("Июль")
+//         break;
+//     case "8":
+//         alert("Август")
+//         break;
+//     case "9":
+//         alert("Сентабрь")
+//         break;
+//     case "10":
+//         alert("Октябрь")
+//         break;
+//     case "11":
+//         alert("Ноябрь")
+//         break;
+//     case "12":
+//         alert("Декабрь")
+//         break;
+//     default:
+//         alert("Try again!");
+//         break;
+// }
+
+// 1. Запросить 2 числа и вывести большее из них.
+// let number1 = parseInt(prompt("Enter 1 number: "));
+// let number2 = parseInt(prompt("Enter 2 number: "));
+
+// let answer = (number1 > number2) ? number1 : number2;
+// alert("Your answer is: " + answer);
+
+// 2. Запросить 1 число и проверить, оно кратно 5 или нет.
+// let number = parseInt(prompt("Enter a number: "));
+// let answer = (number % 5 == 0) ? "Делится на 5" : "Не делится на 5";
+// alert(answer);
+
+// 3. Запросить у пользователя название планеты. Если пользователь ввел «Земля» или «земля», то вывести «Привет,
+// землянин!», в остальных случаях вывести «Привет, инопланетянин!». 
+
+let text = prompt("Enter «Земля» или «земля» : ");
+let answer = (text == "Земля" || text == "земля") ? "Привет, землянин!" : "Привет, инопланетянин!"
+alert(answer);
+
+    </script>
+</body>
+</html>
+
